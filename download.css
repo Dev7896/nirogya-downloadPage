@@ -109,9 +109,12 @@ button {
 
 
 @media only screen and (max-width: 600px) {
-    .Main {
-        padding: 8px;
-    }
+
+    .Main .Header {
+    width: 102%;
+    height: 8dvh;
+}
+
     .Main .Main-one {
         width: 100%;
         padding: 6px;

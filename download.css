@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body , .Main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+body::-webkit-scrollbar{
+    scroll-behavior: none;
+}
+
+.Main .Header {
+    width:100%;
+    height:8dvh;
+    background-color: #fccece;
+    border-bottom: 1.5px solid #920000;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius:27px ;
+}
+
+.Main .Main-one {
+    width: 60%;
+
+    padding: 12px;
+    margin: auto;
+    border-bottom: 2px solid #fccece;
+}
+.Main .Main-one div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 30%; */
+    padding: 10px;
+}
+#Icon {
+    padding: 5px;
+    background-color: #fccece;
+    border-radius: 4px;
+    margin-right: 8%;
+}
+.Main-one div select {
+    background-color:#fccece;
+    color: #920000;
+    border: none;
+    outline: none;
+    padding:3px;
+    border-radius: 3px;
+    margin-right: auto;
+    /* font-size: 1em; */
+}
+.Main-one div span:nth-child(1){
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+td {
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+tr:nth-child(1){
+    width: auto;
+    color: #920000;
+    background-color: #fccece;
+    /* border: 1px solid ; */
+    /* border-radius: 12px; */
+}
+tr:nth-child(1) td:nth-child(1){
+
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+tr:nth-child(1) td:nth-child(3){
+
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6   px;
+}
+
+button {
+    background-color:rgb(3, 253, 3);
+    border: none;
+    outline: none;
+    padding: 6px 26px; 
+    border-radius: 4px 8px;
+}
+.Main div:nth-child(3){
+    width: 60%;
+    margin:2% auto;
+    border-left: 1.5px solid #920000;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 1.2em
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Main {
+        padding: 8px;
+    }
+    .Main .Main-one {
+        width: 100%;
+        padding: 6px;
+        margin: auto;
+        border-bottom: none;
+    }
+    .Main .Main-one div {
+        /* display: block; */
+        padding: 8px;
+    }
+    .Main .Main-one div select {
+        /* width: 100%; */
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .Main .Main-one div span:nth-child(1){
+        display: block;
+        margin: 0;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+    table {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    tr:nth-child(1) td {
+        /* display: block; */
+        padding: 10px;
+        background-color: #fccece;
+        color: #920000;
+        /* border-radius: 6px; */
+        margin-bottom: 6px;
+    }
+    tr:nth-child(1) td:nth-child(1){
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 0px;
+    }
+    tr:nth-child(1) td:nth-child(3){
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 0px;
+    }
+    tr:nth-child(1) td:nth-last-child(1){
+        border-bottom-right-radius: 6px;
+    }
+    button {
+        width: 100%;
+    }
+    .Main div:nth-child(3){
+        width: 100%;
+        margin: auto;
+        border-left: none;
+        padding: 8px;
+        font-weight: 500;
+        font-size: 1.2em
+    }
+}
+
+
+
+/* Hide the table visually */
+#table-container {
+    position: absolute;
+    left: -9999px;
+}
+
+.table {
+    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Limit maximum width */
+    border-collapse: collapse;
+}
+
+.table, .th, .td {
+    border: 1px solid black;
+    padding: 12px; 
+}
+
+.th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .table {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+    
+    .th, .td {
+        padding: 6px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table {
+        width: 95%; /* Adjust width for even smaller screens */
+        padding: 4px; /* Adjust padding for even smaller screens */
+    }
+    
+    .th, .td {
+        padding: 4px; /* Adjust padding for even smaller screens */
+    }
+}
